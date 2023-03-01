@@ -1,3 +1,11 @@
+h1,
+h2,
+h3,
+p,
+ul{
+	padding: 0;
+	margin: 0;
+}
 :root{
 	--primary-clr: #FFFFFF;
 	--primary-brand: #4D5AE5;
@@ -43,8 +51,7 @@ body{
 	align-items: center;
 }
 .nav-list{
-	margin: 0 0 0 76px;
-	padding: 0;
+	margin-left: 76px;
 	display: flex;
 
 	list-style: none;
@@ -91,7 +98,6 @@ body{
 	text-align: center;
 }
 .hero-title {
-	margin-top: 0;
 	margin-bottom: 48px;
 
 	color: var(--primary-clr);
@@ -141,45 +147,36 @@ body{
 	color: var(--primary-brand);
 	border: 1px solid var(--accent);
 }
-.common-section {
+.advantages {
 	padding-top: 120px;
 	margin-bottom: 120px;
 }
-.common-list{
+.advantages-list{
 	display: flex;
 	gap: 0 24px;
-
-	margin: 0;
-	padding: 0;
 
 	list-style: none;
 }
 .title {
-	margin: 0 0 72px 0;
-	padding: 0;
+	margin-bottom: 72px;
 
 	font-size: 36px;
 	line-height: 1.11;
 	text-align: center;
 	color: var(--dark);
 }
-.title-list {
-	margin: 0 0 8px;
+.title-card {
+	margin-bottom: 8px;
 
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 1.2;
 	color: var(--dark);
 }
-.text-list {
-	margin: 0;
-}
 .work-section {
 	padding-bottom: 120px;
 }
 .work-list {
-	margin: 0;
-	padding: 0;
 	display: flex;
 	justify-content: space-between;
 
@@ -193,8 +190,6 @@ body{
 	background-color: var(--light);
 }
 .team-list {
-	margin: 0;
-	padding: 0;
 	display: flex;
 	justify-content: space-between;
 
@@ -205,24 +200,8 @@ body{
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	border-radius: 0px 0px 4px 4px;
 }
-.team-pic{
-}
-/* *============================FOOTER=================================== */
-.footer {
-	padding: 100px 0;
-	color: var(--accent);
-	background-color: var(--dark);
-}
-.footer-text{
-	margin: 0;
-	max-width: 264px;
-}
-.logo-footer{
-	color: var(--light);
-}
 /* !============================PORTFOLIO================================= */
 .portfolio {
-	/* padding: 96px 0 120px; */
 }
 .portfolio-card{
 	margin: 0;
@@ -234,8 +213,8 @@ body{
 	justify-content: center;
 	gap: 0 24px;
 
-	margin: 0 0 72px;
-	padding: 96px 0 0 0;
+	margin-bottom: 72px;
+	padding-top: 96px;
 
 	list-style: none;
 }
@@ -245,8 +224,19 @@ body{
 	justify-content: space-between;
 	gap: 48px 0;
 
-	margin: 0;
-	padding: 0 0 120px 0;
+	padding-bottom: 120px;
 
 	list-style: none;
+}
+/* *============================FOOTER=================================== */
+.footer {
+	padding: 100px 0;
+	color: var(--accent);
+	background-color: var(--dark);
+}
+.footer-text{
+	max-width: 264px;
+}
+.logo-footer{
+	color: var(--light);
 }

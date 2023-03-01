@@ -15,6 +15,12 @@ body{
 	color: var(--text);
 	background-color: var(--primary-clr);
 }
+.container{
+	width: 1158px;
+	margin: 0 auto;
+	outline: 2px solid yellow;
+}
+/* *===============================HEADER=============================== */
 .header {
 }
 .logo {
@@ -24,17 +30,23 @@ body{
 	line-height: 1.33;
 	text-decoration: none;
 	color: var(--dark);
+	outline: 2px solid red;
 }
 .logo-span{
 	color: var(--primary-brand);
 }
+/* ===========================NAVIGATION================================ */
 .nav-list{
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 .nav-link {
 	font-weight: 500;
 	text-decoration: none;
 	color: var(--dark);
+	outline: 2px solid red;
 }
 .nav-link:hover,
 .nav-link:focus{
@@ -43,26 +55,37 @@ body{
 .current{
 	color: var(--pressed-state);
 }
+/* ==============================ADDRESS================================ */
 .contact-list{
+	padding: 0;
+	margin: 0;
+
 	list-style: none;
 }
 .contact-link{
 	color: var(--text);
 	text-decoration: none;
 	font-style: normal;
+	outline: 2px solid red;
 }
 .contact-link:hover,
 .contact-link:focus{
 	color: var(--pressed-state);
 }
+/* *============================MAIN==================================== */
 .hero {
 	background-color: var(--dark);
+	text-align: center;
 }
 .hero-title {
+	margin-top: 0;
+	margin-bottom: 48px;
+
 	color: var(--primary-clr);
 	font-size: 56px;
 	line-height: 1.07;
-	text-align: center;
+
+	outline: 2px solid red;
 }
 .visually-hidden{
 	position: absolute;
@@ -85,6 +108,9 @@ body{
 	letter-spacing: 0.04em;
 	cursor: pointer;
 	border-radius: 4px;
+	outline: 2px solid red;
+
+	padding: 16px 32px;
 }
 .button:hover,
 .button:focus {
@@ -95,40 +121,69 @@ body{
 	background-color: var(--primary-brand);
 	color: var(--primary-clr);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border: 1px solid transparent;
 }
 .button-light{
+	padding: 12px 24px;
+
 	background-color: var(--light);
 	color: var(--primary-brand);
 	border: 1px solid var(--accent);
 }
 .common-section {
+	padding-top: 120px;
+	margin-bottom: 120px;
 }
 .common-list{
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 .title {
+	margin: 0;
+	padding: 0;
+
 	font-size: 36px;
 	line-height: 1.11;
 	text-align: center;
 	color: var(--dark);
+	outline: 2px solid red;
 }
 .title-list {
+	margin: 0 0 8px;
+
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 1.2;
 	color: var(--dark);
+	outline: 2px solid red;
 }
 .text-list {
+	margin: 0;
+
+	outline: 2px solid red;
 }
 .work-section {
+	padding-bottom: 120px;
 }
 .work-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
+.work-pic{
+	outline: 2px solid red;
+}
 .team-section {
+	padding: 120px 0;
 	background-color: var(--light);
 }
 .team-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 .team-list>li{
@@ -136,20 +191,40 @@ body{
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	border-radius: 0px 0px 4px 4px;
 }
+.team-pic{
+	outline: 2px solid red;
+}
+/* *============================FOOTER=================================== */
 .footer {
+	padding: 100px 0;
 	color: var(--accent);
 	background-color: var(--dark);
+}
+.footer-text{
+	margin: 0;
+
+	max-width: 264px;
+	outline: 2px solid red;
 }
 .logo-footer{
 	color: var(--light);
 }
-/* ============================== */
-
+/* !============================PORTFOLIO================================= */
 .portfolio {
+	padding: 96px 0 120px;
+}
+.portfolio-pic{
+	outline: 2px solid red;
 }
 .filter-list {
+	margin: 0 0 72px;
+	padding: 0;
+
 	list-style: none;
 }
 .portfolio-list {
+		margin: 0;
+	padding: 0;
+
 	list-style: none;
 }

@@ -18,10 +18,13 @@ body{
 .container{
 	width: 1158px;
 	margin: 0 auto;
-	outline: 2px solid yellow;
 }
 /* *===============================HEADER=============================== */
 .header {
+	border-bottom: .5px solid var(--accent);
+}
+.wrapper {
+	display: flex;
 }
 .logo {
 	font-family: Raleway, sans-serif;
@@ -30,23 +33,29 @@ body{
 	line-height: 1.33;
 	text-decoration: none;
 	color: var(--dark);
-	outline: 2px solid red;
 }
 .logo-span{
 	color: var(--primary-brand);
 }
 /* ===========================NAVIGATION================================ */
+.navigation{
+	display: flex;
+	align-items: center;
+}
 .nav-list{
-	margin: 0;
+	margin: 0 0 0 76px;
 	padding: 0;
+	display: flex;
 
 	list-style: none;
+}
+.nav-list .item:not(:last-child){
+	margin-right: 40px;
 }
 .nav-link {
 	font-weight: 500;
 	text-decoration: none;
 	color: var(--dark);
-	outline: 2px solid red;
 }
 .nav-link:hover,
 .nav-link:focus{
@@ -56,17 +65,21 @@ body{
 	color: var(--pressed-state);
 }
 /* ==============================ADDRESS================================ */
+.contact{
+	margin-left: auto;
+}
 .contact-list{
-	padding: 0;
-	margin: 0;
+	display: flex;
 
 	list-style: none;
+}
+.contact-list .item + .item{
+	padding-left: 40px;
 }
 .contact-link{
 	color: var(--text);
 	text-decoration: none;
 	font-style: normal;
-	outline: 2px solid red;
 }
 .contact-link:hover,
 .contact-link:focus{
@@ -84,8 +97,7 @@ body{
 	color: var(--primary-clr);
 	font-size: 56px;
 	line-height: 1.07;
-
-	outline: 2px solid red;
+	max-width: 496px;
 }
 .visually-hidden{
 	position: absolute;
@@ -108,7 +120,6 @@ body{
 	letter-spacing: 0.04em;
 	cursor: pointer;
 	border-radius: 4px;
-	outline: 2px solid red;
 
 	padding: 16px 32px;
 }
@@ -135,20 +146,22 @@ body{
 	margin-bottom: 120px;
 }
 .common-list{
+	display: flex;
+	gap: 0 24px;
+
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
 }
 .title {
-	margin: 0;
+	margin: 0 0 72px 0;
 	padding: 0;
 
 	font-size: 36px;
 	line-height: 1.11;
 	text-align: center;
 	color: var(--dark);
-	outline: 2px solid red;
 }
 .title-list {
 	margin: 0 0 8px;
@@ -157,12 +170,9 @@ body{
 	font-weight: 500;
 	line-height: 1.2;
 	color: var(--dark);
-	outline: 2px solid red;
 }
 .text-list {
 	margin: 0;
-
-	outline: 2px solid red;
 }
 .work-section {
 	padding-bottom: 120px;
@@ -170,11 +180,13 @@ body{
 .work-list {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	justify-content: space-between;
 
 	list-style: none;
 }
 .work-pic{
-	outline: 2px solid red;
+	border: 1px solid var(--accent);
 }
 .team-section {
 	padding: 120px 0;
@@ -183,16 +195,17 @@ body{
 .team-list {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	justify-content: space-between;
 
 	list-style: none;
 }
-.team-list>li{
-	background-color: var(--global-bgc);
+.team-card{
+	background-color: var(--primary-clr);
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	border-radius: 0px 0px 4px 4px;
 }
 .team-pic{
-	outline: 2px solid red;
 }
 /* *============================FOOTER=================================== */
 .footer {
@@ -202,29 +215,38 @@ body{
 }
 .footer-text{
 	margin: 0;
-
 	max-width: 264px;
-	outline: 2px solid red;
 }
 .logo-footer{
 	color: var(--light);
 }
 /* !============================PORTFOLIO================================= */
 .portfolio {
-	padding: 96px 0 120px;
+	/* padding: 96px 0 120px; */
 }
-.portfolio-pic{
-	outline: 2px solid red;
+.portfolio-card{
+	margin: 0;
+	padding: 0;
+	border: 1px solid var(--accent);
 }
 .filter-list {
+	display: flex;
+	justify-content: center;
+	gap: 0 24px;
+
 	margin: 0 0 72px;
-	padding: 0;
+	padding: 96px 0 0 0;
 
 	list-style: none;
 }
 .portfolio-list {
-		margin: 0;
-	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 48px 0;
+
+	margin: 0;
+	padding: 0 0 120px 0;
 
 	list-style: none;
 }
